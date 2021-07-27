@@ -1,0 +1,23 @@
+﻿@page "/addGasSize"
+@attribute [Authorize]
+
+<h3 class="mb-5">New Gas Size</h3>
+
+<p>
+    @Message
+</p>
+
+<EditForm Model="@GasSizesViewModel" OnValidSubmit="@HandleValidSubmit">
+
+    <DataAnnotationsValidator />
+    <ValidationSummary></ValidationSummary>
+
+    <div class="form-group row">
+        <label for="name" class="col-sm-3">Gas Size: </label>
+        <InputNumber id="name" class="form-control col-sm-5" @bind-Value="@GasSizesViewModel.SizeInKg" placeholder="Enter Gas Size"></InputNumber>
+        <ValidationMessage class="offset-sm-3 col-sm-5" For="@(() => GasSizesViewModel.SizeInKg)" />
+    </div>
+
+
+    <button type="submit" class="btn btn-secondary mt-3">Save GasSize</button>
+</EditForm>

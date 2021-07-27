@@ -1,0 +1,55 @@
+﻿@page "/gasSizeOverView"
+@attribute [Authorize]
+
+<h3>Gas Size OverView</h3>
+
+<p><input class="custom-checkbox" type="checkbox" id="includeHistory" @onchange="OnIncludeHistoryChanged" />   Include past included Domestic Gases?</p>
+
+@if (GasSizes == null)
+{
+    <p><em>Loading...</em></p>
+
+}
+else
+{
+
+    @foreach (var gasSize in GasSizes)
+    {
+        <table>
+            <thead>
+                <tr>
+                    <td>SIZE: @gasSize.SizeInKg kg</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Gas Vendor name</th>
+                                    <th scope="col">Gas Added date</th>
+                                    <th scope="col">Gas Color</th>
+                                    <th scope="col">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var gas in gasSize.Gases)
+                                {
+                                    <tr>
+                                        <td>@gas.GasVendorName </td>
+                                        <td>@gas.Date.ToShortDateString() </td>
+                                        <td>@gas.Color</td>
+                                        <td>@gas.Price</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    }
+}

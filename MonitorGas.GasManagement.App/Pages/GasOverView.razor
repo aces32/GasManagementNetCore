@@ -1,0 +1,42 @@
+﻿@page "/GasOverView"
+@attribute [Authorize]
+
+<h3>Gas Overview</h3>
+
+<div class="m-2 d-flex justify-content-end">
+    <button @onclick="AddNewGas" class="mr-1">Add Gas</button>
+    @*<button @onclick="ExportGas">Export Gas</button>*@
+</div>
+
+@if (Gases == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">Gas name</th>
+                <th scope="col">Gas Added date</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var gas in Gases)
+            {
+                <tr>
+                    <td><img src="@(gas.ImageUrl)" style="border-radius: 50%; height: 60px; width: 70px" /></td>
+                    <td class="gas-name">@gas.GasVendorName </td>
+                    <td class="gas-date">@gas.Date.ToShortDateString() </td>
+                    <td>
+                        <a href="@($"gasdetails/{gas.GasID}")" class="btn btn-secondary">
+                            <i class="fas fa-edit"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

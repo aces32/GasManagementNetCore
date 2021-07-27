@@ -1,0 +1,71 @@
+﻿@page "/gasdetails"
+@page "/gasdetails/{gasid}"
+@attribute [Authorize]
+
+<h1 class="page-title">Details for @GasDetailViewModel.GasVendorName</h1>
+
+@Message
+
+<EditForm Model="@GasDetailViewModel" OnValidSubmit="@HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary></ValidationSummary>
+
+    <div class="form-group row">
+        <label for="name" class="col-sm-3">Vendor name: </label>
+        <InputText id="name" class="form-control col-sm-8" @bind-Value="@GasDetailViewModel.GasVendorName" placeholder="Enter Gas Vendor name"></InputText>
+        <ValidationMessage class="offset-sm-3 col-sm-8" For="@(() => GasDetailViewModel.GasVendorName)" />
+    </div>
+
+    <div class="form-group row">
+        <label for="price" class="col-sm-3">Gas price: </label>
+        <InputNumber id="price" class="form-control col-sm-8" @bind-Value="@GasDetailViewModel.Price" placeholder="Enter price"></InputNumber>
+        <ValidationMessage class="offset-sm-3 col-sm-8" For="@(() => GasDetailViewModel.Price)" />
+
+    </div>
+
+    <div class="form-group row">
+        <label for="artist" class="col-sm-3">Color: </label>
+        <InputText id="artist" class="form-control col-sm-8" @bind-Value="@GasDetailViewModel.Color" placeholder="Enter Color"></InputText>
+        <ValidationMessage class="offset-sm-3 col-sm-8" For="@(() => GasDetailViewModel.Color)" />
+
+    </div>
+
+    <div class="form-group row">
+        <label for="date" class="col-sm-3">Gas Added date: </label>
+        <InputDate id="date" class="form-control col-sm-8" @bind-Value="@GasDetailViewModel.Date"></InputDate>
+    </div>
+
+    <div class="form-group row">
+        <label for="description" class="col-sm-3">Description: </label>
+        <InputTextArea id="description" class="form-control col-sm-8" @bind-Value="@GasDetailViewModel.Description" placeholder="Enter description"></InputTextArea>
+        <ValidationMessage class="offset-sm-3 col-sm-8" For="@(() => GasDetailViewModel.Description)" />
+    </div>
+
+    <div class="form-group row">
+        <label for="imageurl" class="col-sm-3">Image: </label>
+        <InputText id="imageurl" class="form-control col-sm-8" @bind-Value="@GasDetailViewModel.ImageUrl" placeholder="Enter image URL"></InputText>
+        <ValidationMessage class="offset-sm-3 col-sm-8" For="@(() => GasDetailViewModel.ImageUrl)" />
+    </div>
+
+    <div class="form-group row">
+        <label for="gasSize" class="col-sm-3">Gas Size: </label>
+        <InputSelect id="gasSize" class="form-control col-sm-8" @bind-Value="@SelectedGasSizesId">
+            @foreach (var gasSize in GasSizes)
+            {
+                <option value="@gasSize.GasSizeID">@gasSize.SizeInKg</option>
+            }
+        </InputSelect>
+    </div>
+
+    <button type="submit" class="submit-button">Save Gas</button>
+
+</EditForm>
+
+@if (SelectedGasId != Guid.Empty)
+{
+    <p>
+        <button @onclick="DeleteGas" class="delete-button">Delete Gas</button>
+    </p>
+}
+<br />
+<p class="back-to-catalog mt-3"><i class="fas fa-arrow-left"></i><a @onclick="@NavigateToOverview">Back to overview</a></p>

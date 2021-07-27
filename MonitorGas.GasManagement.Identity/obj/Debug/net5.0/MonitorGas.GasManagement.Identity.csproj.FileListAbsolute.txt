@@ -1,0 +1,17 @@
+D:\Coding\SmartDataAssesment\MonitorGas\MonitoreGasCore\MonitorGas.GasManagement\MonitorGas.GasManagement.Identity\obj\Debug\net5.0\MonitorGas.GasManagement.Identity.csproj.AssemblyReference.cache
+D:\Coding\SmartDataAssesment\MonitorGas\MonitoreGasCore\MonitorGas.GasManagement\MonitorGas.GasManagement.Identity\obj\Debug\net5.0\MonitorGas.GasManagement.Identity.GeneratedMSBuildEditorConfig.editorconfig
+D:\Coding\SmartDataAssesment\MonitorGas\MonitoreGasCore\MonitorGas.GasManagement\MonitorGas.GasManagement.Identity\obj\Debug\net5.0\MonitorGas.GasManagement.Identity.AssemblyInfoInputs.cache
+D:\Coding\SmartDataAssesment\MonitorGas\MonitoreGasCore\MonitorGas.GasManagement\MonitorGas.GasManagement.Identity\obj\Debug\net5.0\MonitorGas.GasManagement.Identity.AssemblyInfo.cs
+D:\Coding\SmartDataAssesment\MonitorGas\MonitoreGasCore\MonitorGas.GasManagement\MonitorGas.GasManagement.Identity\obj\Debug\net5.0\MonitorGas.GasManagement.Identity.csproj.CoreCompileInputs.cache
+D:\Coding\SmartDataAssesment\MonitorGas\MonitoreGasCore\MonitorGas.GasManagement\MonitorGas.GasManagement.Identity\bin\Debug\net5.0\MonitorGas.GasManagement.Identity.deps.json
+D:\Coding\SmartDataAssesment\MonitorGas\MonitoreGasCore\MonitorGas.GasManagement\MonitorGas.GasManagement.Identity\bin\Debug\net5.0\MonitorGas.GasManagement.Identity.dll
+D:\Coding\SmartDataAssesment\MonitorGas\MonitoreGasCore\MonitorGas.GasManagement\MonitorGas.GasManagement.Identity\bin\Debug\net5.0\ref\MonitorGas.GasManagement.Identity.dll
+D:\Coding\SmartDataAssesment\MonitorGas\MonitoreGasCore\MonitorGas.GasManagement\MonitorGas.GasManagement.Identity\bin\Debug\net5.0\MonitorGas.GasManagement.Identity.pdb
+D:\Coding\SmartDataAssesment\MonitorGas\MonitoreGasCore\MonitorGas.GasManagement\MonitorGas.GasManagement.Identity\bin\Debug\net5.0\MonitorGas.GasManagement.Application.dll
+D:\Coding\SmartDataAssesment\MonitorGas\MonitoreGasCore\MonitorGas.GasManagement\MonitorGas.GasManagement.Identity\bin\Debug\net5.0\MonitorGas.GasManagement.Domain.dll
+D:\Coding\SmartDataAssesment\MonitorGas\MonitoreGasCore\MonitorGas.GasManagement\MonitorGas.GasManagement.Identity\bin\Debug\net5.0\MonitorGas.GasManagement.Application.pdb
+D:\Coding\SmartDataAssesment\MonitorGas\MonitoreGasCore\MonitorGas.GasManagement\MonitorGas.GasManagement.Identity\bin\Debug\net5.0\MonitorGas.GasManagement.Domain.pdb
+D:\Coding\SmartDataAssesment\MonitorGas\MonitoreGasCore\MonitorGas.GasManagement\MonitorGas.GasManagement.Identity\obj\Debug\net5.0\MonitorGas.GasManagement.Identity.csproj.CopyComplete
+D:\Coding\SmartDataAssesment\MonitorGas\MonitoreGasCore\MonitorGas.GasManagement\MonitorGas.GasManagement.Identity\obj\Debug\net5.0\MonitorGas.GasManagement.Identity.dll
+D:\Coding\SmartDataAssesment\MonitorGas\MonitoreGasCore\MonitorGas.GasManagement\MonitorGas.GasManagement.Identity\obj\Debug\net5.0\ref\MonitorGas.GasManagement.Identity.dll
+D:\Coding\SmartDataAssesment\MonitorGas\MonitoreGasCore\MonitorGas.GasManagement\MonitorGas.GasManagement.Identity\obj\Debug\net5.0\MonitorGas.GasManagement.Identity.pdb
